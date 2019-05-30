@@ -1,0 +1,7 @@
+/* box-shadow: 좌우 상하 퍼짐값 컬러 */
+.header {background-color: #fff; padding: 8px 16px; letter-spacing: 4px; box-shadow: 0 5px 5px rgba(0,0,0,0.5); position: fixed; width: 100%;}
+.header > .logo {float: left; padding: 8px 12px; cursor: pointer;}
+.header > .logo:hover {background-color: #ccc;}
+.header > .navs {float: right;}
+.header > .navs > div {float: left; padding: 8px 12px; cursor: pointer;}
+.header > .navs > div:hover {background-color: #ccc;}
