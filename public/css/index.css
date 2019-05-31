@@ -6,28 +6,47 @@ html, body {font-family: 'Open Sans', sans-serif; height: 5000px;}
 
 /* box-shadow: 좌우 상하 퍼짐값 컬러 */
 .header {background-color: #fff; padding: 8px 16px; letter-spacing: 4px; box-shadow: 0 3px 3px rgba(0,0,0,0.3); position: fixed; width: 100%; z-index: 9999;}
-.header > .logo {float: left; padding: 8px 12px; cursor: pointer;}
+.header > .logo {float: left; padding: 8px 12px; cursor: pointer; font-size: 1.25rem;}
 .header > .logo:hover {background-color: #ccc;}
 .header > .navs {float: right;}
-.header > .navs > div {float: left; padding: 8px 12px; cursor: pointer;}
+.header > .navs > div {float: left; padding: 8px 12px; cursor: pointer; font-size: 1.25rem;}
 .header > .navs > div:hover {background-color: #ccc;}
 
 .wrap {width: 100%; max-width: 1500px; margin: 0 auto;}
 .bans {position: relative;}
-.bans > .c-name {position: absolute; color: #fff; font-size: 40px; 
+.bans > .c-name {position: absolute; color: #fff; font-size: 3vw; 
 	left: 50%; top:50%; transform: translate(-50%, -50%); letter-spacing: 6px;}
 .bans > .c-name > :first-child {background-color: rgba(0,0,0,0.7); padding: 8px 16px; font-weight: bold;}
 
 .section {margin-top: 36px;}
-.sec-tit {padding: 12px 0; font-size: 24px; color: #000; 
+.sec-tit {padding: 12px 0; font-size: 1.5rem; color: #000; 
 	border-bottom: 1px solid #ccc;}
 .prds {margin-top: 36px;}
 .prd {width: 24%; float: left; margin-right: 1.33%; margin-bottom: 1.33%; position: relative;}
 .prd:nth-child(4), .prd:nth-child(8) {margin-right: 0;}
 .prd-tit {position: absolute; background-color: #000; color: #fff; padding: 10px; 
-	left: 0; top: 0;}
+	left: 0; top: 0; font-size: 1rem;}
 
+/* 태블릿 가로 */
+@media screen and (max-width: 1024px) {
 
+}
+
+/* 태블릿 세로 */
 @media screen and (max-width: 768px) {
+	html, body {font-size: 18px;}
+	.wrap {width: 96%;}
 	.header > .navs {display: none;}
+	/* .bans > .c-name > :last-child {display: none;} */
+	.prd {width: 48%; margin-left: 1%; margin-right: 1%;}
+}
+
+/* 스마트폰 가로 */
+@media screen and (max-width: 480px) {
+	.prd {width: 100%; margin-left: 0; margin-right: 0;}
+}
+
+/* 스마트폰 세로 */
+@media screen and (max-width: 320px) {
+	html, body {font-size: 20px;}
 }
