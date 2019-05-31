@@ -27,6 +27,20 @@ html, body {font-family: 'Open Sans', sans-serif; height: 5000px;}
 .prd-tit {position: absolute; background-color: #000; color: #fff; padding: 10px; 
 	left: 0; top: 0; font-size: 1rem;}
 
+.sec-summary {margin-top: 1rem; font-size: 1rem; text-align: justify;}
+.mems {margin-top: 1.5rem;}
+.mem {width: 24%; margin-right: 1.33%; margin-bottom: 3%; float: left;}
+.mem:last-child {margin-right: 0;}
+.mem-name {font-size: 1.5rem; padding: 0.5rem 0;}
+.mem-job {font-size: 0.875rem; padding: 0.25rem 0; color: #666;}
+.mem-cont {font-size: 1rem; padding: 0.25rem 0;}
+.mem-bt {font-size: 1rem; margin-top:0.5rem; padding: 0.5rem 0; background-color: #eee; text-align: center; cursor: pointer;}
+.mem-bt:hover {background-color: #ccc;}
+
+
+
+
+
 /* 태블릿 가로 */
 @media screen and (max-width: 1024px) {
 
@@ -39,11 +53,13 @@ html, body {font-family: 'Open Sans', sans-serif; height: 5000px;}
 	.header > .navs {display: none;}
 	/* .bans > .c-name > :last-child {display: none;} */
 	.prd {width: 48%; margin-left: 1%; margin-right: 1%;}
+	.mem {width: 48%; margin-left: 1%; margin-right: 1%;}
 }
 
 /* 스마트폰 가로 */
 @media screen and (max-width: 480px) {
 	.prd {width: 100%; margin-left: 0; margin-right: 0;}
+	.mem {width: 100%; margin-left: 0; margin-right: 0;}
 }
 
 /* 스마트폰 세로 */
