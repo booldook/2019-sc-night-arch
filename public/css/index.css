@@ -2,10 +2,10 @@
 /* font-family: 'Open Sans', sans-serif; */
 @import 'base.css';
 
-html, body {font-family: 'Open Sans', sans-serif;}
+html, body {font-family: 'Open Sans', sans-serif; height: 5000px;}
 
 /* box-shadow: 좌우 상하 퍼짐값 컬러 */
-.header {background-color: #fff; padding: 8px 16px; letter-spacing: 4px; box-shadow: 0 5px 5px rgba(0,0,0,0.5); position: fixed; width: 100%; z-index: 9999;}
+.header {background-color: #fff; padding: 8px 16px; letter-spacing: 4px; box-shadow: 0 3px 3px rgba(0,0,0,0.3); position: fixed; width: 100%; z-index: 9999;}
 .header > .logo {float: left; padding: 8px 12px; cursor: pointer;}
 .header > .logo:hover {background-color: #ccc;}
 .header > .navs {float: right;}
@@ -16,4 +16,18 @@ html, body {font-family: 'Open Sans', sans-serif;}
 .bans {position: relative;}
 .bans > .c-name {position: absolute; color: #fff; font-size: 40px; 
 	left: 50%; top:50%; transform: translate(-50%, -50%); letter-spacing: 6px;}
-.bans > .c-name > :first-child {background-color: rgba(0,0,0,0.7); padding: 8px 16px; font-weight: bold; font-family: }
+.bans > .c-name > :first-child {background-color: rgba(0,0,0,0.7); padding: 8px 16px; font-weight: bold;}
+
+.section {margin-top: 36px;}
+.sec-tit {padding: 12px 0; font-size: 24px; color: #000; 
+	border-bottom: 1px solid #ccc;}
+.prds {margin-top: 36px;}
+.prd {width: 24%; float: left; margin-right: 1.33%; margin-bottom: 1.33%; position: relative;}
+.prd:nth-child(4), .prd:nth-child(8) {margin-right: 0;}
+.prd-tit {position: absolute; background-color: #000; color: #fff; padding: 10px; 
+	left: 0; top: 0;}
+
+
+@media screen and (max-width: 768px) {
+	.header > .navs {display: none;}
+}
