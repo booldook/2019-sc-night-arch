@@ -1,0 +1,22 @@
+.wrap {height: 100%; border: 10px solid darkorange; position: relative;}
+.box {background-color: darkred; width: 200px; height: 200px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: chartreuse; 
+	transition-property: all;
+	transition-duration: 1s;
+	/* transition-delay: 2s; */
+	transition-timing-function: ease-in-out 
+}
+.box:hover {width: 400px; height: 400px; border-width: 30px; background-color: darkcyan;}
+
+
+.box2 {width: 100px; height: 100px; background-color: darkolivegreen; position: absolute; top: 200px; left: 200px; transition: all 0.5s;}
+.box2:hover {transform: rotate(45deg); opacity: 0.2;}
+
+.bt {padding: 12px 48px; font-size: 1.25rem; font-weight: bold; color: #333; 
+	border: 2px solid #333; border-radius: 4px; display: inline-block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 
+	transition: background-color 1s, color 3s;}
+.bt:hover {background-color: #333; color: #fff;}
+
+.box3 {width: 200px; height: 200px; background-color: darksalmon;}

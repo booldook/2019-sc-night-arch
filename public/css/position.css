@@ -1,0 +1,16 @@
+body {height: 5000px;}
+.wrap {border: 10px solid red; margin: 50px auto; max-width: 900px; width: 100%; position: relative;}
+.box {width: 200px; height: 200px;}
+.box1 {background-color: blue; float: left;}
+.box2 {background-color: darkgreen; float: right;}
+
+.box3 {background-color: blue; position: relative; top: 0; left: 0;}
+.box4 {background-color: darkgreen; position: absolute; top: 0; right: 0;}
+
+.wrap-bg {width: 100%; max-width: 1200px; height: 400px; margin: 50px auto; 
+	background-image: url(../img/architect.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
