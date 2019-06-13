@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Architect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <!-- <link rel="stylesheet" href="css/base.css"> -->
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/wow.min.js"></script>
 </head>
 <body>
-  <div class="header clear">
+  <div class="header">
     <div class="logo">
       <span>BR</span> Architects
     </div>
@@ -21,44 +24,44 @@
   </div>
   <div class="wrap">
     <div class="bans">
-      <img src="img/architect.jpg" alt="" class="img">
-      <div class="c-name">
+      <!-- <img src="img/architect.jpg" alt="" class="img"> -->
+      <div class="c-name wow fadeInUp" data-wow-offset="300">
         <span>BR</span>
         <span>Architects</span>
       </div>
     </div>
     <div class="section">
       <div class="sec-tit">Projects</div>
-      <div class="prds clear">
-        <div class="prd">
+      <div class="prds">
+        <div class="prd wow zoomIn" data-wow-offset="300" data-wow-delay="0.1s">
           <img src="img/house2.jpg" alt="상품" class="img">
           <div class="prd-tit">Summer House</div>
         </div>
-        <div class="prd">
+        <div class="prd wow zoomIn" data-wow-offset="300" data-wow-delay="0.3s">
           <img src="img/house3.jpg" alt="상품" class="img">
           <div class="prd-tit">Brick House</div>
         </div>
-        <div class="prd">
+        <div class="prd wow zoomIn" data-wow-offset="300" data-wow-delay="0.2s">
           <img src="img/house4.jpg" alt="상품" class="img">
           <div class="prd-tit">Renovated</div>
         </div>
-        <div class="prd">
+        <div class="prd wow zoomIn" data-wow-offset="300" data-wow-delay="0.5s">
           <img src="img/house5.jpg" alt="상품" class="img">
           <div class="prd-tit">Barn House</div>
         </div>
-        <div class="prd">
+        <div class="prd wow zoomIn" data-wow-offset="300" data-wow-delay="0.1s">
           <img src="img/house4.jpg" alt="상품" class="img">
           <div class="prd-tit">Summer House</div>
         </div>
-        <div class="prd">
+        <div class="prd wow zoomIn" data-wow-offset="300" data-wow-delay="0.25s">
           <img src="img/house3.jpg" alt="상품" class="img">
           <div class="prd-tit">Brick House</div>
         </div>
-        <div class="prd">
+        <div class="prd wow zoomIn" data-wow-offset="300">
           <img src="img/house5.jpg" alt="상품" class="img">
           <div class="prd-tit">Renovated</div>
         </div>
-        <div class="prd">
+        <div class="prd wow zoomIn" data-wow-offset="300" data-wow-delay="0.8s">
           <img src="img/house2.jpg" alt="상품" class="img">
           <div class="prd-tit">Barn House</div>
         </div>
@@ -69,7 +72,7 @@
       <div class="sec-summary">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui culpa eaque deleniti eveniet autem eum? Omnis exercitationem fugiat non tenetur cumque sit reprehenderit nobis, explicabo magni vel, sunt unde debitis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, soluta, pariatur voluptates sint doloremque cum, ipsum corporis adipisci est deleniti perspiciatis quam maiores eligendi quidem. Rem eaque architecto ut dolorum.
       </div>
-      <div class="mems clear">
+      <div class="mems">
         <div class="mem">
           <div class="mem-img">
             <img src="img/team1.jpg" alt="팀원" class="img">
@@ -116,9 +119,32 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <div class="sec-tit">Contact</div>
+      <div class="sec-summary">
+        Lets get in touch and talk about your next project.
+      </div>
+      <form action="#" class="contact-form">
+        <ul class="ins">
+          <li><input type="text" placeholder="Name"></li>
+          <li><input type="text" placeholder="Email"></li>
+          <li><input type="text" placeholder="Subject"></li>
+          <li><input type="text" placeholder="Comment"></li>
+        </ul>
+        <div class="bts">
+          <button><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+        </div>
+      </form> 
+    </div>
+    <div class="section">
+      <img src="img/map.jpg" alt="약도" class="img">
+    </div>
   </div>
   <div class="footer">
-
+    Powered by booldook.
   </div>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
